@@ -40,8 +40,8 @@ namespace Lab19.ViewModels
                 OnPropertyChanged();
             }
         }
-        private int number3;
-        public int Number3
+        private double number3;
+        public double Number3
         {
             get => number3;
             set
@@ -54,7 +54,7 @@ namespace Lab19.ViewModels
         public ICommand AddCommand{ get; }
         private void OnAddCommandExecute(object p)
         {
-            Number3 = Ariph.Add(Number1, Number2);
+            Number3 = 2*3.14*Ariph.Add(Number1, Number2);
         }
         private bool CanAddCommandExecuted(object p)
         {
